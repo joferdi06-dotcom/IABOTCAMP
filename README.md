@@ -20,7 +20,7 @@ git commit -m "IABOTCAMP v1"
 ```
 git branch -M main
 git remote add origin https://github.com/joferdi06-dotcom/IABOTCAMP.git
-git push -u origin main
+
 ```
 ## Fin del Programa
 ### ![P1](P1.png)
