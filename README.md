@@ -28,3 +28,9 @@ git remote add origin https://github.com/joferdi06-dotcom/IABOTCAMP.git
 python -- version
 git --version
 ```
+## Codigos HTML
+```
+<p> párrafo
+<h1> titulo grande
+ctrl + shift + k elimina una linea
+```
