@@ -1,0 +1,35 @@
+/* Estilo para toda la Web */
+*{
+    margin: 0; /* Quitar margenes por defecto */
+    padding: 0; /* Quita rellenos por defecto */
+}
+
+/* Estilo Header */
+
+.header{
+    background: #0c0c0c; /* Color de fondo en hexadecimal */
+    color: white; /* Color fuente */
+    padding: 16px 24px; /* Espacio interno eje x y eje y plano cartesiano*/
+    display: flex; /* Logo y Menú en Fila */
+    align-items: center; /* Elementos en fila centrados*/
+    justify-content: space-between; /* Separa a la izquierda y derecha */
+}
+
+/* Estilo Titulo Web */
+.nombre{
+    font-size: 22px; /* Tamaño en Pixeles */
+}
+/* Enlaces del Menú */
+.nav-link{
+    color: white;
+    text-decoration: none; /* Quita el subrayado */
+    margin-left: 12px; /* Espacio entre links */
+    opacity: 0.85; /* Color un poco mas suave */
+}
+
+.nav-link:hover{
+    opacity: 1; /*  */
+    text-decoration: underline; /*  */
+    color: bisque;/*  */
+    background-color: gray;
+}

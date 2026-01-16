@@ -4,35 +4,129 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
     <title>José Fernando Díaz Bonilla</title>
+   <!--Estilos de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Estilos Personalizados-->
+    {% comment %} <link rel = "stylesheet" href = "style.css"> {% endcomment %}
+    <link rel = "stylesheet" href = "style2.css">
 </head>
+
 <body>
-    <!-- usuario: admin contraseña admin1234 -->
-    <h1><p>Mi Primer Programa</p></h1>
-    <h2>Titulo 2</h2>
-    <h3>Titulo 3</h3>
-    <h4>Titulo 4</h4>
-    <hr>
-    <h5>Titulo 5</h5>
-    <h6>Titulo 6</h6>
-    <br>
-    <h6>Campistas</h6>
 
-    <!-- Lista Ordenada -->
-     <ol>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-     </ol>
-    
-     <!-- Lista Desordenada -->
-      <ul>
-        <li>X</li>
-        <li>Y</li>
-        <li>Z</li>
+  {% comment %} <header class = "header">
+    <h1 class = "nombre">Mi Sitio</h1>
+
+    <!-- Menu de navegacion -->
+
+    <nav>
+      <a  class = "nav-link" target = "_blank" href = "https://www.youtube.com/watch?v=IimBRwHhW54">🏃‍➡️Youtube - Python🤖##</a>
+      <a  class = "nav-link" target = "_blank" href = "https://www.facebook.com/">🏃‍➡️Facebook</a>
+      <a  class = "nav-link" target = "_blank" href = "https://www.google.com/">🏃‍➡️Google</a>
+    </nav>
+
+    </header> {% endcomment %}
+  
+    {% comment %} <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mi Sitio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.youtube.com/watch?v=IimBRwHhW54">Youtube</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.google.com/">Google</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=IimBRwHhW54">Youtube</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/">Facebook</a></li>
+            <li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+          </ul>
+        </li>
       </ul>
-      <p></p>
-      <div class = "container"></div>
-    <div class = "container2"></div>
+    </div>
+  </div>
+</nav>
+    </nav> {% endcomment %}
 
+    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">ENVIAR</a>
+  </div>
+</div>
+
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mi Sitio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.youtube.com/watch?v=IimBRwHhW54">Youtube</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.facebook.com/">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.google.com/">Google</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=IimBRwHhW54">Youtube</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/">Facebook</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>   
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  </body>
 </body>
 </html>
