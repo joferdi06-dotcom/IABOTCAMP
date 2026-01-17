@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"terminal.integrated.fontSize": 20,
+		"liveServer.settings.multiRootWorkspaceName": "personal"
+	}
+}
