@@ -4,7 +4,8 @@ from openpyxl import load_workbook
 # =============================
 # FUNCION Clean_id
 # Elimina caracteres no numericos de un documento
-# "cc76.888.560" = "75888560"
+# cc76.888.560
+75888560
 # =============================
 
 # De aqui en adelante el codigo es la Logica del Negocio

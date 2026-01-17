@@ -1,0 +1,23 @@
+{
+	"Separador de seccion Python": {
+		"prefix": "sep",
+		"body": [
+			"# =======================",
+			"# ${1: 🤖PUNTO SW WNTRADA🤖}",
+			"# =======================",
+		],
+		"description": "Crea un separado de secciones en python"
+	}
+}
+
+{
+	"Eliminaa caracteres no numericos de un documento": {
+		"prefix": "Elimi",
+		"body": [
+			"# =======================",
+			"# ${2: 🤖Funcion Elimina caracteres🤖}",
+			"# =======================",
+		],
+		"description": "Eliminaa caracteres no numericos"
+	}
+}
