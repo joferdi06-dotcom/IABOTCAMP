@@ -40,8 +40,8 @@ def process_excel(path):
         ws[f"B{row}"].value,
         ws[f"C{row}"].value
             )
-    # Guarda los cambios en el mismo archivo
-    ws.save(path)
+        # Guarda los cambios en el mismo archivo
+        wb.save(path)
 
 # Hasta aqui va la Logica del Negocio
 

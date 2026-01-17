@@ -19,7 +19,7 @@ def on_clic_procesar():
     archivo = seleccionar_excel()
     exito,mensaje = process_excel_safe(archivo)
     if exito:
-        msgb.showwinfo("Proceso Completado", mensaje)
+        msgb.showinfo("Proceso Completado", mensaje)
     else:
         msgb.showerror("Error ", mensaje)
 
