@@ -11,7 +11,7 @@
 }
 
 {
-	"Eliminaa caracteres no numericos de un documento": {
+	"Elimina caracteres no numericos de un documento": {
 		"prefix": "Elimi",
 		"body": [
 			"# =======================",
