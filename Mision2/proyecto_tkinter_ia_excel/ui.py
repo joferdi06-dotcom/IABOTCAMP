@@ -30,12 +30,7 @@ def iniciar_app():
         return flg.askopenfilename(
         title = "Seleccionar archivo Excel",
         filetypes = [("Archivo Excel", "*.xlsx")]
-        )
-
-    
-       
-        
-        
+        )                
 
     # Acción del botón
     def ejecutar():
