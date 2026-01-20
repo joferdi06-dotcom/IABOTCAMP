@@ -56,7 +56,7 @@ def iniciar_app():
 
     # Lo que el usuario va a ver
 
-    # Funcion para
+    # Funcion para buscar y seleccionar el archivo
     def seleccionar_excel():
         return flg.askopenfilename(
         title = "Seleccionar archivo Excel",
@@ -80,7 +80,7 @@ def iniciar_app():
         ruta.insert(0, archivo)
 
     # Botón
-    tk.Button(root, text="Ejecutar instrucción", command = ejecutar).pack(pady = 20)
+    tk.Button(root, text = "Ejecutar instrucción", command = ejecutar).pack(pady = 20)
     
     boton = tk.Button(
         root,
