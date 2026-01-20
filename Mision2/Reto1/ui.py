@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import filedialog as flg, messagebox as msgb
 from controller import procesar_instruccion
 
+
 def iniciar_app():
     
     # Ventana principal
@@ -15,6 +16,35 @@ def iniciar_app():
 
     # Etiqueta
     tk.Label(root, text = "Escriba una instrucción en lenguaje natural").pack(pady = 10)
+
+
+    # Funcion para buscar y seleccionar el archivo de excel
+    def seleccionar_excel():
+        pash =  flg.askopenfilename(
+        title = "Seleccionar archivo Excel",
+        filetypes = [("Archivo Excel", "*.xlsx")]
+        )
+
+    # Funcion para devolvernos la ruta del archivo
+    
+        if pash:
+            # msgb.showinfo("Resultado", pash)
+            pash_Label.config(text = pash)
+
+    boton = tk.Button(
+        root,
+        text = "Seleccionar Archiv de Excel",
+        command = seleccionar_excel, 
+        width = 30,
+        height = 2
+    )
+
+    # Etiqueta
+    pash_Label = tk.Label(root, text = "Sin Archivo",
+                          width = 30,
+                          height = 2
+                          ).pack(pady = 10)
+    boton.pack(pady = 15)
 
     # Campo de texto
     entrada = tk.Entry(root, width = 60)
@@ -35,7 +65,7 @@ def iniciar_app():
 
     # Acción del botón
     def ejecutar():         
-        pash = ruta.get()
+        pash = pash_Label.cget("text")
         texto = entrada.get()
         msgb.showinfo("Resultado", pash)
         exito, mensaje = procesar_instruccion(texto,pash)
@@ -46,7 +76,7 @@ def iniciar_app():
             msgb.showerror("Error", mensaje)
     
     def on_click():
-        archivo= seleccionar_excel()
+        archivo = seleccionar_excel()
         ruta.insert(0, archivo)
 
     # Botón
