@@ -17,9 +17,10 @@
 </head>
 
 <body>
-   <div class = "container my-5">
+    <main id = "pdf-content">
+        <div class = "container my-5">
         <div class = "row shadow-lg rounded-4 overflow-hidden">
-            <!--Columna Izquierda-->
+                <!--Columna Izquierda-->
                 <div class = "col-md-4 bg-primary text-white p-4">
                     <header class = "text-center">
                         <img src = "img/foto.jpg" 
@@ -85,11 +86,10 @@
                             <div class = "progress-bar bg-white" style = "width: 100%;"></div>
                        </div>
 
-                    </section>
-
+                    </section>                    
                                       
                 </div> 
-            <!--Columna Derecha-->
+                <!--Columna Derecha-->
                 <div class = "col-md-8 p-4">
                     
                     <section class = "mb-3">
@@ -128,17 +128,65 @@
                                 <h6 class = "text-primary">
                                     Sena - Regional Caldas
                                 </h6>
+
+                                                             
                                 <ul class = "mt-3"> 
                                     <li>Orientar FPI Formación Profesional Integral Sistemas</li>
                                     <li>Formación Virtual</li>
                                     <li>Articulación con la Media</li>
                                 </ul>
-                            </div>
+                            </div>                            
                         </div>
-                    <section>
+                    </section>
+
+                    <section class = "my-3">
+                        <h4 class ="fw-bold text-primary mb-4">
+                        <i class = "fas fa-graduation-cap me-1"></i>
+                        Educación
+                        </h4>
+
+                        <div class = "card mb-3 border-0 shadow-lg">
+                            <div class = "card-body">
+                                <h4 class = "card.title fw-bold">
+                                    Ingeniería de Sistemas
+                                </h4>
+
+                                <h5 class = "card-subtitle mb-2 text-muted small">
+                                    2006
+                                </h5>
+                                <h6 class = "text-primary">
+                                    Universidad Antonio Nariño
+                                </h6>                                                         
+                        </div>
+                    </div>      
+                    
+                    <div class = "card mb-3 border-0 shadow-lg">
+                            <div class = "card-body">
+                                <h4 class = "card.title fw-bold">
+                                    Tecnología en Informática Aplicada
+                                </h4>
+
+                                <h5 class = "card-subtitle mb-2 text-muted small">
+                                    2006
+                                </h5>
+                                <h6 class = "text-primary">
+                                    Universidad Católica de Manizales
+                                </h6>                                                          
+                        </div>
+                    </div>
+                    </section>                    
                 </div>
         </div>         
-    </div> 
+        </div>
+    </main>   
+
+    <div class = "text-center mb-4">
+        <button onclick = "downloadPDF()" class = "btn btn_outline-primary">Descargar en PDF</button>
+    </div>
+
+    <script src = "https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+    <script src = "script.js"></script>
+    
 
 </body>
 </html>
